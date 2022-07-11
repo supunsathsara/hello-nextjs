@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import styles from "../../../../styles/Home.module.css";
 
-function userDetails() {
+function Reviews() {
   const router = useRouter();
   const { productId, reviewId } = router.query;
   return (
@@ -11,4 +11,4 @@ function userDetails() {
   );
 }
 
-export default userDetails;
+export default Reviews;
