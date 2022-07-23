@@ -1,0 +1,98 @@
+{
+    "events":
+        [{
+            "id": 1,
+            "title":"event 1",
+            "description": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy.",
+            "category": "sports",
+            "date": "3/22/2022"
+          }, {
+            "id": 2,
+            "title":"event 2",
+            "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+            "category": "food",
+            "date": "8/30/2021"
+          }, {
+            "id": 3,
+            "title":"event 3",
+            "description": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus.",
+            "category": "tech",
+            "date": "1/4/2022"
+          }, {
+            "id": 4,
+            "title": "event 4",
+            "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros.",
+            "category": "sports",
+            "date": "2/27/2022"
+          }, {
+            "id":5,
+            "title": "event 5",
+            "description": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.",
+            "category": "tech",
+            "date": "1/7/2022"
+          }, {
+            "id": 6,
+            "title":"event 6",
+            "description": "Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+            "category": "food",
+            "date": "3/8/2022"
+          }, {
+            "id": 7,
+            "title":"event 7",
+            "description": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla.",
+            "category": "food",
+            "date": "7/20/2022"
+          }, {
+            "id": 8,
+            "title":"event 8",
+            "description": "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
+            "category": "food",
+            "date": "5/4/2022"
+          }, {
+            "id": 9,
+            "title":"event 9",
+            "description": "Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+            "category": "tech",
+            "date": "8/2/2021"
+          }, {
+            "id": 10,
+            "title":"event 10",
+            "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla.",
+            "category": "sports",
+            "date": "10/14/2021"
+          }
+        ],
+    "dashboard": {
+        "posts": 5,
+        "comments": 10,
+        "likes":200,
+        "followers":20,
+        "following":18
+    },
+    "news":[
+        {
+            "id":1,
+            "title":"News Article 1",
+            "description":"description 1",
+            "category": "sports"
+        },
+        {
+            "id":2,
+            "title":"News Article 2",
+            "description":"description 2",
+            "category": "politics"
+        },
+        {
+            "id":3,
+            "title":"News Article 3",
+            "description":"description 3",
+            "category": "sports"
+        },
+        {
+            "id":4,
+            "title":"News Article 4",
+            "description":"description 4",
+            "category": "politics"
+        }
+    ]
+}
