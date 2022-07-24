@@ -14,10 +14,29 @@ function EventList({ eventList }) {
     router.push('/events?category=sports', undefined, { shallow: true });
   };
 
+  const fetchEvent = async (event) => {
+    if (!event) {
+      const response = await fetch(`http://localhost:4000/events`);
+      const data = await response.json();
+      setEvents(data);
+      router.push(`/events`, undefined, { shallow: true });
+    } else {
+      const response = await fetch(
+        `http://localhost:4000/events?category=${event}`
+      );
+      const data = await response.json();
+      setEvents(data);
+      router.push(`/events?category=${event}`, undefined, { shallow: true });
+    }
+  };
+
   return (
     <>
       <h1>Events</h1>
+      <button onClick={() => fetchEvent('')}>All</button>
       <button onClick={fetchSportsEvents}>Sports</button>
+      <button onClick={() => fetchEvent('food')}>Food</button>
+      <button onClick={() => fetchEvent('tech')}>Tech</button>
       {events.map((event) => {
         return (
           <div key={event.id}>
