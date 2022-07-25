@@ -1,4 +1,5 @@
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 function Post({ post }) {
   const Router = useRouter();
@@ -9,6 +10,9 @@ function Post({ post }) {
 
   return (
     <>
+      <Head>
+        <title>Post {post.id}</title>
+      </Head>
       <h1>
         {post.id} {post.title}
       </h1>
@@ -32,9 +36,9 @@ export async function getStaticPaths() {
   // }
   return {
     paths: [
-      { params: { postId: "1" } },
-      { params: { postId: "2" } },
-      { params: { postId: "3" } },
+      { params: { postId: '1' } },
+      { params: { postId: '2' } },
+      { params: { postId: '3' } },
     ],
     fallback: true,
   };
