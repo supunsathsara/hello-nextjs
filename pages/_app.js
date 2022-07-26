@@ -1,8 +1,10 @@
 import Head from 'next/head';
+import { SessionProvider } from 'next-auth/react';
 import '../styles/globals.css';
 import { ThemeProvider } from 'styled-components';
-import Header from '../components/Header';
+import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import '../components/navbar.css';
 import '../styles/layout.css';
 
 const theme = {
@@ -11,7 +13,7 @@ const theme = {
   },
 };
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   if (Component.getLayout) {
     return Component.getLayout(<Component {...pageProps} />);
   }
@@ -22,9 +24,12 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Hello Next.js" />
       </Head>
       <ThemeProvider theme={theme}>
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
+        <SessionProvider session={session}>
+          <Navbar />
+
+          <Component {...pageProps} />
+          <Footer />
+        </SessionProvider>
       </ThemeProvider>
     </>
   );

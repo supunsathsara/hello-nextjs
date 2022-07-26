@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   // Enables the styled-components SWC transform
   styledComponents: true,
+  images: {
+    domains: ['avatars.githubusercontent.com'],
+  },
   redirects: async () => {
     return [
       {
