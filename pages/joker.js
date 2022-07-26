@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import img from '../public/images/joker.jpg';
+import img from '../public/Images/joker.jpg';
 
 function JokerPage() {
   return (

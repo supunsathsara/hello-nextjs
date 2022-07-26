@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Footer from '../components/footer';
-import styles from '../styles/About.module.scss';
+import styles from '../styles/about.module.scss';
 
 function About() {
   return (
