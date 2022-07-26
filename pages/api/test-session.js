@@ -1,6 +1,6 @@
 import { getSession } from 'next-auth/react';
 
-export default async (req, res) => {
+const Handler = async (req, res) => {
   const session = await getSession({ req });
   //console.log(session);
   if (!session) {
@@ -9,3 +9,5 @@ export default async (req, res) => {
     res.status(200).send({ message: 'success', session });
   }
 };
+
+export default Handler;

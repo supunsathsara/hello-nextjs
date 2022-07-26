@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function commentsPage() {
+function CommentsPage() {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState('');
 
@@ -52,4 +52,4 @@ function commentsPage() {
   );
 }
 
-export default commentsPage;
+export default CommentsPage;

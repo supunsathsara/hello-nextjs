@@ -45,6 +45,7 @@ function DashboardSWR() {
         <h1>Dashboard</h1>
         <Image
           src={`${session.user.image}`}
+          alt={session.user.name}
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(
             shimmer(300, 300)
